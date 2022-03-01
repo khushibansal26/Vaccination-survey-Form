@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            background: url('https://www.financialexpress.com/wp-content/uploads/2021/07/vaccine-doses.jpg');
+            margin: 0px;
+            padding: 0px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: whitesmoke;
+            box-sizing: border-box;
+            /* color: #06062b; */
+            font-weight: bold;
+        }
+
+
+        .container {
+            border: 2px solid green;
+            width: 650px;
+            height: 1050px;
+            margin: 85px auto;
+            background-color: #020217a6;
+            border-radius: 18px;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            width: 332px;
+        }
+
+        form input {
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .container h1,
+        p {
+            text-align: center;
+        }
+
+        /* .check:invalid {
+            border: 3px solid red;
+        } */
+
+        #dropdown {
+            height: 31px;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 19px;
+        }
+
+        #submit {
+            border: 2px solid black;
+            background-color: #06132b;
+            margin: auto;
+            width: 191%;
+            color: white;
+            font-size: 20px;
+        }
+
+        #dis {
+            width: 125%;
+        }
+
+        #addition {
+            width: 115%;
+        }
+
+        #description {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Vaccination Survey Form</h1>
+            <p id="description"> <strong> Survey by Govt. Of India to Track Vaccination </strong> </p>
+        </header>
+        <form action="" id="survey-form">
+            <label class="name" for="name" id="name-label">Name
+                <input type="text" id="name" class="check" placeholder="Enter Your Name" required>
+            </label>
+            <label class="name" for="email" id="email-label">Email
+                <input type="email" id="email" class="check" placeholder="Enter Your email" required>
+            </label>
+            <label class="name" for="number" id="number-label">Mobile number
+                <input type="number" id="number" class="check" placeholder="Enter Your number" max="9999999999"
+                    min="1000000000" required>
+            </label>
+
+            <label class="name" id="drop" for="vaccine">Choose the Vaccine you have taken:</label>
+            <select name="" id="dropdown">
+                <option value="Covishield">Covishield</option>
+                <option value="Covaxin">Covaxin</option>
+                <option value="Covovax">Covovax</option>
+                <option value="Pfizer">Pfizer</option>
+                <option value="Moderna">Moderna</option>
+            </select>
+            <br>
+            <label for="radio" class="name">Please Select Your Gender
+                <br>
+                Male <input type="radio" name="myGender" value="Male">
+                Female <input type="radio" name="myGender" value="Female">
+                Neutral<input type="radio" name="myGender" value=" Neutral">
+            </label>
+            <br>
+            <label id="dis" for="diseases" class="name">Select the Diseases You are suffering From(check all that apply)
+                <br>
+                Lung Disease <input type="checkbox" value="Lung Disease"> <br>
+                Diabetes <input type="checkbox" value=" Diabetes "> <br>
+                Blood Pressue <input type="checkbox" value="Blood Pressue "> <br>
+                Thyroid<input type="checkbox" value="   Thyroid"> <br>
+                Tuberclosis <input type="checkbox" value="Tuberclosis"> <br>
+                Heart Disease<input type="checkbox" value="Heart Disease "> <br>
+
+            </label>
+
+            <label id="addition" for="additonal" class="name">
+                Any Additonal information you want to share: <br></share:br><textarea name="myText" id="" cols="80"
+                    rows="10">
+
+                </textarea>
+            </label>
+
+            <input id="submit" type="submit" value="Submit Now">
+
+        </form>
+
+    </div>
+</body>
+
+</html>
